@@ -21,7 +21,7 @@ const Topbar = () => {
           </div>
         </div>
         <a href="#">Products</a>
-        <a href="#">Why Rack?</a>
+        <a href="#">Why POZE?</a>
         <a href="#">About Us</a>
         <a href="https://templates.iqonic.design/posdash/html/backend/index.html" target="_blank" rel="noopener noreferrer">Click For Free Trial</a>
         <a href="#">Get in Touch</a>

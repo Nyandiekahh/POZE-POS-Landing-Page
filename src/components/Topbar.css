@@ -7,7 +7,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
+    background-color: #1E3A8A; /* Dark Blue */
     padding: 20px;
     color: white;
     position: relative;
@@ -18,7 +18,7 @@
     font-size: 34px; /* Make the logo text larger to stand out */
     font-weight: bold;
     position: absolute;
-    left: 25%; /* Moves the logo to 1/4 from the left side */
+    left: 20%;
     top: 10px; /* Adjust this value to move the logo up or down */
     transform: translateX(-50%);
 }
@@ -31,16 +31,17 @@
 }
 
 .topbar-links a {
-    color: white;
+    color: white; /* Keep text white for contrast */
     text-decoration: none;
     padding: 10px 15px;
     font-size: 16px;
     display: flex; /* Ensures consistent alignment */
     align-items: center; /* Centers the text vertically */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .topbar-links a:hover {
-    background-color: #555;
+    background-color: #3B82F6; /* Light Blue */
     border-radius: 5px;
 }
 
@@ -53,21 +54,21 @@
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #FFFFFF; /* White for dropdown */
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #1E3A8A; /* Dark Blue for dropdown text */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd;
+    background-color: #E0F2FE; /* Light Blue on hover */
 }
 
 .dropdown:hover .dropdown-content {
