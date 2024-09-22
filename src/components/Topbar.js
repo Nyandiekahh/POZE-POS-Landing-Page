@@ -23,7 +23,7 @@ const Topbar = () => {
         <a href="#">Products</a>
         <a href="#">Why Rack?</a>
         <a href="#">About Us</a>
-        <a href="#">Click For Trial</a>
+        <a href="https://templates.iqonic.design/posdash/html/backend/index.html" target="_blank" rel="noopener noreferrer">Click For Trial</a>
         <a href="#">Get in Touch</a>
       </div>
     </div>
