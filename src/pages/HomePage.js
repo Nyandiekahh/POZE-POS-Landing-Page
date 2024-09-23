@@ -242,49 +242,7 @@ const HomePage = () => {
                 <p className="no-credit-card">No credit card required. Cancel anytime.</p>
             </section>
 
-            <footer className="footer">
-                <div className="footer-content">
-                    <div className="footer-section">
-                        <h3>Quick Links</h3>
-                        <ul>
-                            <li><a href="#!">Home</a></li>
-                            <li><a href="#!">Features</a></li>
-                            <li><a href="#!">Pricing</a></li>
-                            <li><a href="#!">About Us</a></li>
-                            <li><a href="#!">Contact</a></li>
-                        </ul>
-                    </div>
-                    <div className="footer-section">
-                        <h3>Resources</h3>
-                        <ul>
-                            <li><a href="#!">Blog</a></li>
-                            <li><a href="#!">Help Center</a></li>
-                            <li><a href="#!">API Documentation</a></li>
-                            <li><a href="#!">Partner Program</a></li>
-                        </ul>
-                    </div>
-                    <div className="footer-section">
-                        <h3>Legal</h3>
-                        <ul>
-                            <li><a href="#!">Terms of Service</a></li>
-                            <li><a href="#!">Privacy Policy</a></li>
-                            <li><a href="#!">Security</a></li>
-                        </ul>
-                    </div>
-                    <div className="footer-section">
-                        <h3>Connect With Us</h3>
-                        <div className="social-icons">
-                            {/* Add social media icons here */}
-                        </div>
-                        <p>Subscribe to our newsletter</p>
-                        <input type="email" placeholder="Enter your email" />
-                        <button>Subscribe</button>
-                    </div>
-                </div>
-                <div className="footer-bottom">
-                    <p>&copy; 2024 POZE POS. All Rights Reserved.</p>
-                </div>
-            </footer>
+            
         </div>
     );
 };
