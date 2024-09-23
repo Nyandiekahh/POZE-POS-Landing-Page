@@ -1,87 +1,92 @@
 .footer {
-    background-color: #1e1e2e; /* Dark background */
-    color: white; /* White text */
-    padding: 20px 10%;
-    text-align: left;
-    font-family: 'Arial', sans-serif;
-    position: relative; /* Enable positioning */
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: flex-start; /* Align items to the start */
-    align-items: flex-start;
-    margin-left: 8.5%; /* Move the whole footer content to the right */
-    margin-bottom: 20px;
-  }
-  
-  .footer-logo-column {
-    flex: 1;
-  }
-  
-  .footer-logo {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .social-icons a {
-    margin-right: 15px;
-    color: white;
-    font-size: 1.5rem;
-    transition: color 0.3s;
-  }
-  
-  .social-icons a:hover {
-    color: #ff7f50; /* Coral color on hover */
-  }
-  
-  .footer-offerings,
-  .footer-contacts {
-    flex: 1;
-    margin-left: 20px;
-  }
-  
-  .footer-offerings h2,
-  .footer-contacts h2 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
-  }
-  
-  .footer-offerings ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-offerings li {
-    margin-bottom: 8px;
-    position: relative;
-    padding-left: 25px; /* For circle */
-  }
-  
-  .circle {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    background-color: #ff7f50; /* Circle color */
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-  }
-  
-  .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #ccc;
-    padding-top: 10px;
-  }
-  
-  .footer-bottom p {
-    margin: 5px 0;
-    font-size: 0.9rem;
-  }
-  
+  background-color: #1e1e2e; /* Dark background */
+  color: #f1f1f1; /* Lighter text for better contrast */
+  padding: 40px 10%;
+  text-align: left;
+  font-family: 'Arial', sans-serif;
+  position: relative;
+}
+
+.footer-columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+.footer-logo-column {
+  flex: 1;
+}
+
+.footer-logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icons a {
+  margin-right: 15px;
+  color: #f1f1f1;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #ff7f50; /* Coral color on hover */
+}
+
+.footer-offerings,
+.footer-contacts {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.footer-offerings h2,
+.footer-contacts h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #ff7f50; /* Accent color for section titles */
+}
+
+.footer-offerings ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-offerings li {
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 25px; /* For circle */
+}
+
+.circle {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ff7f50;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #333; /* Darker border */
+  padding-top: 10px;
+  margin-top: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  color: #ccc;
+}
