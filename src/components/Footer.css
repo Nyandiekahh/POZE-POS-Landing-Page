@@ -1,21 +1,13 @@
 .footer {
   background-color: #1e1e2e; /* Dark background */
   color: #f1f1f1; /* Lighter text for better contrast */
-  padding: 40px 10%;
+  padding: 40px 0; /* Use Bootstrap's padding */
   text-align: left;
   font-family: 'Arial', sans-serif;
-  position: relative;
 }
 
 .footer-columns {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
   margin-bottom: 20px;
-}
-
-.footer-logo-column {
-  flex: 1;
 }
 
 .footer-logo {
@@ -41,8 +33,7 @@
 
 .footer-offerings,
 .footer-contacts {
-  flex: 1;
-  margin-left: 20px;
+  /* No margin-left since Bootstrap handles spacing */
 }
 
 .footer-offerings h2,

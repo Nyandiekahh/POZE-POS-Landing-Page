@@ -8,40 +8,33 @@
     justify-content: space-between;
     align-items: center;
     background-color: #1E3A8A; /* Dark Blue */
-    padding: 20px;
+    padding: 15px 30px;
     color: white;
-    position: fixed; /* Change to fixed */
-    top: 0; /* Stick to the top */
-    left: 0; /* Ensure it starts from the left */
-    right: 0; /* Ensure it stretches to the right */
-    z-index: 1000; /* Make sure it stays above other elements */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
 }
 
 .logo {
-    font-family: 'Ananda Black', serif; /* Apply the Ananda Black font */
-    font-size: 34px; /* Make the logo text larger to stand out */
+    font-family: 'Ananda Black', serif;
+    font-size: 28px;
     font-weight: bold;
-    position: absolute;
-    left: 20%;
-    top: 10px; /* Adjust this value to move the logo up or down */
-    transform: translateX(-50%);
 }
 
 .topbar-links {
     display: flex;
-    justify-content: flex-start;
-    margin-left: 50%; /* Push links to start from the middle of the app */
-    flex-grow: 1;
+    margin-left: auto; /* Push links to the right */
 }
 
 .topbar-links a {
-    color: white; /* Keep text white for contrast */
+    color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 10px 20px;
     font-size: 16px;
-    display: flex; /* Ensures consistent alignment */
-    align-items: center; /* Centers the text vertically */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
 
 .topbar-links a:hover {
@@ -49,32 +42,78 @@
     border-radius: 5px;
 }
 
-/* Dropdown Styling */
 .dropdown {
     position: relative;
-    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #FFFFFF; /* White for dropdown */
+    background-color: white;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
-    color: #1E3A8A; /* Dark Blue for dropdown text */
+    color: #01040c; /* Dark Blue for dropdown items */
     padding: 12px 16px;
     text-decoration: none;
     display: block;
 }
 
 .dropdown-content a:hover {
-    background-color: #E0F2FE; /* Light Blue on hover */
+    background-color: #051b29; /* Light background on hover */
 }
 
 .dropdown:hover .dropdown-content {
     display: block;
+}
+
+/* Ensure the dropdown is responsive */
+.dropdown-menu {
+    background-color: white; /* Keep dropdown background white */
+    border: none; /* Remove border */
+}
+
+.dropdown-item {
+    color: #1E3A8A; /* Color for dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: #E0F2FE; /* Light color on hover */
+}
+
+/* Bootstrap utility classes for responsiveness */
+@media (max-width: 768px) {
+    .topbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 0;
+    }
+
+    .topbar-links a {
+        padding: 8px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        font-size: 24px;
+    }
+
+    .topbar-links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .topbar-links a {
+        padding: 8px 10px;
+        font-size: 14px;
+    }
 }
