@@ -1,32 +1,36 @@
 import React from 'react';
 import './Topbar.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 
 const Topbar = () => {
   return (
-    <div className="topbar">
-      <div className="topbar-left">
-        <h1 className="logo">P O Z E</h1>
-      </div>
-      <div className="topbar-links">
-        <a href="#">Home</a>
-        <div className="dropdown">
-          <a href="#">What We Offer</a>
-          <div className="dropdown-content">
-            <a href="#">POS</a>
-            <a href="#">Stock-take & Data Entry</a>
-            <a href="#">E-Commerce Integration</a>
-            <a href="#">Payment Integration</a>
-            <a href="#">POS Hardwares</a>
-            <a href="#">Tracking Expenses</a>
-          </div>
-        </div>
-        <a href="#">Products</a>
-        <a href="#">Why POZE?</a>
-        <a href="#">About Us</a>
-        <a href="https://templates.iqonic.design/posdash/html/backend/index.html" target="_blank" rel="noopener noreferrer">Click For Free Trial</a>
-        <a href="#">Get in Touch</a>
-      </div>
-    </div>
+    <Navbar className="topbar" expand="lg">
+      <Navbar.Brand href="#" className="logo">
+        P O Z E
+      </Navbar.Brand>
+      <Navbar.Toggle aria-controls="navbar-nav" />
+      <Navbar.Collapse id="navbar-nav">
+        <Nav className="ml-auto topbar-links">
+          <Nav.Link href="#">Home</Nav.Link>
+          <NavDropdown title="What We Offer" id="offer-dropdown">
+            <NavDropdown.Item href="#">POS</NavDropdown.Item>
+            <NavDropdown.Item href="#">Stock-take & Data Entry</NavDropdown.Item>
+            <NavDropdown.Item href="#">E-Commerce Integration</NavDropdown.Item>
+            <NavDropdown.Item href="#">Payment Integration</NavDropdown.Item>
+            <NavDropdown.Item href="#">POS Hardwares</NavDropdown.Item>
+            <NavDropdown.Item href="#">Tracking Expenses</NavDropdown.Item>
+          </NavDropdown>
+          <Nav.Link href="#">Products</Nav.Link>
+          <Nav.Link href="#">Why POZE?</Nav.Link>
+          <Nav.Link href="#">About Us</Nav.Link>
+          <Nav.Link href="https://templates.iqonic.design/posdash/html/backend/index.html" target="_blank" rel="noopener noreferrer">
+            Click For Free Trial
+          </Nav.Link>
+          <Nav.Link href="#">Get in Touch</Nav.Link>
+        </Nav>
+      </Navbar.Collapse>
+    </Navbar>
   );
 }
 
