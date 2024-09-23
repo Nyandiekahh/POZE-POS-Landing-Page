@@ -10,7 +10,11 @@
     background-color: #1E3A8A; /* Dark Blue */
     padding: 20px;
     color: white;
-    position: relative;
+    position: fixed; /* Change to fixed */
+    top: 0; /* Stick to the top */
+    left: 0; /* Ensure it starts from the left */
+    right: 0; /* Ensure it stretches to the right */
+    z-index: 1000; /* Make sure it stays above other elements */
 }
 
 .logo {

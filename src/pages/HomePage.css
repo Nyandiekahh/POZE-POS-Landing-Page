@@ -1,0 +1,54 @@
+.home-container {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 100%;
+  }
+  
+  .hero-image {
+    height: 100vh; /* Full viewport height */
+    background-image: url('https://www.qualtrics.com/m/assets/wp-content/uploads/2020/06/customer-care-1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Enable positioning of the text */
+  }
+  
+  .hero-text-box {
+    position: absolute;
+    top: 150px; /* Moved further down */
+    left: 50px; /* Adjust as needed */
+    background-color: rgba(30, 58, 138, 0.7); /* Semi-transparent dark blue background */
+    padding: 20px;
+    color: white;
+    font-size: 24px;
+    line-height: 1.5;
+    border-radius: 8px;
+    max-width: 300px;
+  }
+  
+  
+  .cards-section {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .card {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+  }
+  
+  .info-card {
+    flex: 1;
+  }
+  
+  .image-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
