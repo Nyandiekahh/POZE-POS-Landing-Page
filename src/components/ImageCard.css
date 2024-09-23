@@ -1,0 +1,32 @@
+.card {
+    background-color: #fff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    padding: 20px; /* Inner padding */
+    margin: 20px; /* Margin around the card */
+    max-width: 400px; /* Set a max width */
+    text-align: left; /* Align text to the left */
+  }
+  
+  .info-card h2 {
+    font-size: 1.5rem; /* Font size for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+    color: #333; /* Dark gray color for the heading */
+  }
+  
+  .info-card p {
+    font-size: 1rem; /* Font size for paragraphs */
+    line-height: 1.5; /* Line height for readability */
+    color: #555; /* Medium gray color for the text */
+  }
+  
+  .info-card ul {
+    list-style-type: disc; /* Bullet points for the list */
+    padding-left: 20px; /* Indent the list */
+  }
+  
+  .info-card li {
+    margin-bottom: 8px; /* Space between list items */
+    color: #555; /* Color for list items */
+  }
+  
